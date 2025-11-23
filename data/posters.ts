@@ -4,7 +4,7 @@ export const posterItems = [
     title: "Raid: Cockroach Killer",
     category: "Photo Manipulation",
     desc: "A fictional ad campaign featuring a pet geared up for battle. Created entirely in Photoshop using photobashing techniques to combine armor plates onto a cat.",
-    image: "/assets/Photoshop Advertisments/Jennex_N_GRAF5013_Project_03_PosterIllustration.webp",
+    image: "/assets/Photoshop Advertisments/Jennex_N_Graf5012_Project3.webp",
     color: "bg-red-900"
   },
   {
@@ -20,7 +20,7 @@ export const posterItems = [
     title: "Quelle Chris Comedy",
     category: "Event Poster",
     desc: "A humorous, illustrated poster for a comedy tour. The desert setting and cactus costumes were drawn in Illustrator to create a 'cartoony' aesthetic that stands out at first glance.",
-    image: "/assets/Photoshop Advertisments/Jennex_N_Graf5012_Project3.webp",
+    image: "/assets/Photoshop Advertisments/Jennex_N_GRAF5013_Project_03_PosterIllustration.webp",
     color: "bg-yellow-700"
   },
   {

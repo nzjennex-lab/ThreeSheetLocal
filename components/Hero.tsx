@@ -117,7 +117,7 @@ export default function Hero() {
         <div className="relative w-[350px] h-[450px] md:w-[450px] md:h-[600px] group cursor-pointer transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
           <div className="absolute inset-0 border-4 border-secondary translate-x-4 translate-y-4" />
           <img
-            src="/assets/Photo of me/nathan.jpg"
+            src="/assets/Photo of me/nathan.webp"
             alt="Nathan Jennex"
             className="w-full h-full object-cover relative z-10 shadow-xl"
           />
