@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, Variants } from 'framer-motion'
 import { ArrowDown, Download } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
@@ -22,13 +22,13 @@ export default function Hero() {
     return () => clearInterval(timer)
   }, [])
 
-  // Standard fade up
-  const fadeUp = {
+  // --- ADDED ': Variants' TO FIX BUILD ERROR ---
+  const fadeUp: Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
   }
 
-  const sentence = {
+  const sentence: Variants = {
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
@@ -36,7 +36,7 @@ export default function Hero() {
     },
   }
 
-  const letter = {
+  const letter: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   }
@@ -52,9 +52,12 @@ export default function Hero() {
           transition={{ staggerChildren: 0.1 }}
           className="relative"
         >
+          {/* Small Top Label */}
+          <motion.p variants={fadeUp} className="text-secondary font-bold tracking-widest mb-2 uppercase">
+            Portfolio 2025
+          </motion.p>
 
           {/* --- THE VAPORIZE CONTAINER --- */}
-          {/* Fixed height ensures content below doesn't jump when words change */}
           <div className="relative h-[160px] md:h-[220px] mb-6 flex items-center">
             <AnimatePresence mode="wait">
               <motion.div
@@ -140,7 +143,9 @@ export default function Hero() {
 
 // --- HELPER FOR THE BACKGROUND TEXT ---
 function VaporizeWord({ text, delay }: { text: string, delay: number }) {
-  const container = {
+  
+  // --- ADDED ': Variants' HERE TOO ---
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1, 
@@ -152,7 +157,7 @@ function VaporizeWord({ text, delay }: { text: string, delay: number }) {
     }
   }
 
-  const charAnim = {
+  const charAnim: Variants = {
     hidden: { opacity: 0, filter: "blur(10px)", scale: 1.2, x: -20 },
     visible: { 
       opacity: 1, 
