@@ -52,10 +52,6 @@ export default function Hero() {
           transition={{ staggerChildren: 0.1 }}
           className="relative"
         >
-          {/* Small Top Label */}
-          <motion.p variants={fadeUp} className="text-secondary font-bold tracking-widest mb-2 uppercase">
-            Portfolio 2025
-          </motion.p>
 
           {/* --- THE VAPORIZE CONTAINER --- */}
           <div className="relative h-[160px] md:h-[220px] mb-6 flex items-center">
